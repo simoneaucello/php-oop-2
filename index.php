@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/db.php';
+
 require_once __DIR__ . '/Models/Product.php';
 require_once __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/Models/Item.php';
@@ -51,14 +51,14 @@ $products = [
     <div class="row">
       <?php foreach ($products as $product) : ?>
         <div class="col-md-4">
-          <div class="card mb-5">
-            <img src="<?php echo $product->image; ?>" class="card-img-top p-2" alt="<?php echo $product->name; ?>">
-            <div class="card-body">
+          <div class="card my_card mb-5">
+            <img src="<?php echo $product->image; ?>" class="card-img-top p-3" alt="<?php echo $product->name; ?>">
+            <div class="card-body ">
               <h5 class="card-title"><?php echo $product->name; ?></h5>
-              <p class="card-text">Prezzo: <?php echo $product->price; ?> &euro;</p>
+              <p class="card-text text-danger ">Prezzo: <?php echo $product->price; ?> &euro;</p>
               <p class="card-text">Categoria: <?php echo $product->category->icon; ?> <?php echo $product->category->name ?></p>
               <p class="card-text">Tipo: <?php echo $product->item->name; ?></p>
-              <a href="#" class="btn btn-primary">Acquista</a>
+              <a href="#" class="btn btn-dark">Acquista</a>
             </div>
           </div>
         </div>
