@@ -9,7 +9,7 @@ class Product
   public $category;
   public $item;
 
-  public function __construct(int $_id, string $_name, float $_price, string $_image, string $_category, string $_item)
+  public function __construct(int $_id, string $_name, float $_price, string $_image, Category $_category, Item $_item)
   {
 
 
