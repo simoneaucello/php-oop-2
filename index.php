@@ -1,6 +1,11 @@
 <?php
 
-require_once __DIR__ . '/data/db.php'
+require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/Models/Product.php';
+require_once __DIR__ . '/Models/Category.php';
+require_once __DIR__ . '/Models/Item.php';
+
+
 
 ?>
 
