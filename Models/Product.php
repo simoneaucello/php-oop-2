@@ -18,6 +18,10 @@ class Product
   public function __construct(int $_id, string $_name, float $_price, string $_image, Category $_category, Item $_item)
   {
 
+    if ($_name === '') {
+      throw new Exception('Il prodotto non ha un nome');
+    }
+
 
     $this->id = $_id;
     $this->name = $_name;
